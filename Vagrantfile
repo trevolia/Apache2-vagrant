@@ -67,23 +67,11 @@ Vagrant.configure("2") do |config|
   apt-get update 
   apt-get install -y apache2 
   apt-get install -y apt-transport-https ca-certificates curl software-properties-common 
-  #sudo apt-get update
-  #sudo apt-get install python-dev python-setuptools
-  #sudo easy_install pip
-  #sudo pip install virtualenv
-  #sudo virtualenv pythonclub --no-site-packages
-  #pip install django
-  #pip install django==1.5
-  #sudo apt-get -y install python  
-  #git clone https://github.com/edsonbenites/devops-sample-vestibulares.git /var/www/devops-sample-vestibulares
-  #git clone https://github.com/edsonbenites/html-docs-hello-world.git /var/www/html-docs-hello-world
-  #git clone https://github.com/edsonbenites/devops-aula13.git /var/www/devops-aula13
   rm -rf /var/www/introducao-html-css
-  git clone https://github.com/edsonbenites/introducao-html-css.git /var/www/introducao-html-css
-  git clone https://github.com/edsonbenites/Apache2-vagrant.git /etc/apache2/sites-enable
-  # git clone https://github.com/mattdesl/simple-html-index.git /var/www/simple-html-index
+  git clone https://github.com/trevolia/introducao-html-css.git /var/www/introducao-html-css
+  git clone https://github.com/trevolia/Apache2-vagrant.git /etc/apache2/sites-enable
   rm /etc/apache2/sites-enabled/000-default.conf
-  git clone https://github.com/edsonbenites/Apache2-vagrant.git /etc/apache2/sites-enabled
+  git clone https://github.com/trevolia/Apache2-vagrant.git /etc/apache2/sites-enabled
   service apache2 restart 
 
   SHELL
